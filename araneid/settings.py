@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'araneid.spiders'
 
 # mysql setting
 MYSQL_HOST = '127.0.0.1'
-MYSQL_PORT = 3307
+MYSQL_PORT = 3306
 MYSQL_DB = 'source_db'
 MYSQL_USER = 'root'
 MYSQL_PWD = 'root'
