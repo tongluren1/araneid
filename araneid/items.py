@@ -12,3 +12,7 @@ class AraneidItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class JianshuItem(scrapy.Item):
+    user_out_url = scrapy.Field()
+    user_name = scrapy.Field()

@@ -14,6 +14,17 @@ BOT_NAME = 'araneid'
 SPIDER_MODULES = ['araneid.spiders']
 NEWSPIDER_MODULE = 'araneid.spiders'
 
+# mysql setting
+MYSQL_HOST = '127.0.0.1'
+MYSQL_PORT = 3307
+MYSQL_DB = 'source_db'
+MYSQL_USER = 'root'
+MYSQL_PWD = 'root'
+
+ITEM_PIPELINES = {
+   'araneid.pipelines.AraneidPipeline': 300,
+   'araneid.pipelines.JianshuPipeline': 400,
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'araneid (+http://www.yourdomain.com)'
@@ -64,9 +75,6 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'araneid.pipelines.AraneidPipeline': 300,
-#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
